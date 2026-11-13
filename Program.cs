@@ -86,3 +86,29 @@
 //         return a + b + c;
 //     }
 // }
+
+// Шаг 12. Метод внутри метода
+
+Console.WriteLine();
+Console.WriteLine("Методы вызывают методы");
+PrintNumberInfo(7);
+PrintNumberInfo(10);
+PrintNumberInfo(15);
+bool IsEven(int number)
+{
+    return number % 2 == 0;
+}
+void PrintNumberInfo(int number)
+{
+    string parity = IsEven(number) ? "чётное" : "нечётное";
+    Console.WriteLine($"{number} — {parity} число");
+}
+
+// Шаг 13. Комбинируем с циклом из ПР5
+
+Console.WriteLine();
+Console.WriteLine("Методы + цикл");
+for (int i = 1; i <= 5; i++)
+{
+    PrintNumberInfo(i);
+}
