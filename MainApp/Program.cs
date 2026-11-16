@@ -87,28 +87,49 @@
 //     }
 // }
 
-// Шаг 12. Метод внутри метода
+// // Шаг 12. Метод внутри метода
 
-Console.WriteLine();
-Console.WriteLine("Методы вызывают методы");
-PrintNumberInfo(7);
-PrintNumberInfo(10);
-PrintNumberInfo(15);
-bool IsEven(int number)
-{
-    return number % 2 == 0;
-}
-void PrintNumberInfo(int number)
-{
-    string parity = IsEven(number) ? "чётное" : "нечётное";
-    Console.WriteLine($"{number} — {parity} число");
-}
+// Console.WriteLine();
+// Console.WriteLine("Методы вызывают методы");
+// PrintNumberInfo(7);
+// PrintNumberInfo(10);
+// PrintNumberInfo(15);
+// bool IsEven(int number)
+// {
+//     return number % 2 == 0;
+// }
+// void PrintNumberInfo(int number)
+// {
+//     string parity = IsEven(number) ? "чётное" : "нечётное";
+//     Console.WriteLine($"{number} — {parity} число");
+// }
 
-// Шаг 13. Комбинируем с циклом из ПР5
+// // Шаг 13. Комбинируем с циклом из ПР5
 
-Console.WriteLine();
-Console.WriteLine("Методы + цикл");
-for (int i = 1; i <= 5; i++)
-{
-    PrintNumberInfo(i);
-}
+// Console.WriteLine();
+// Console.WriteLine("Методы + цикл");
+// for (int i = 1; i <= 5; i++)
+// {
+//     PrintNumberInfo(i);
+// }
+
+// // // Самостоятельная работа
+
+// // Задание 1. Конвертер единиц
+
+// System.Console.WriteLine();
+// System.Console.Write("Введите метры: ");
+// int meters = int.Parse(System.Console.ReadLine());
+// double MetersToFeet(double meters)
+// {
+//     return meters * 3.28084;
+// }
+// System.Console.WriteLine($"{meters} метров - это {MetersToFeet(meters)} фунтов");
+// System.Console.WriteLine();
+// System.Console.Write("Введите градусы Цельсия: ");
+// int celsius = int.Parse(System.Console.ReadLine());
+// double CelsiusToFahrenheit(double celsius)
+// {
+//     return (celsius * 9 / 5) + 32;
+// }
+// System.Console.WriteLine($"{celsius} градусов по Цельсию - это {CelsiusToFahrenheit(celsius)} градусов по Фаренгейту");
