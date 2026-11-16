@@ -133,3 +133,6 @@
 //     return (celsius * 9 / 5) + 32;
 // }
 // System.Console.WriteLine($"{celsius} градусов по Цельсию - это {CelsiusToFahrenheit(celsius)} градусов по Фаренгейту");
+
+// Задание 2. Валидатор с вложенными методами
+
